@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jeslin.ida.ViewPages.ContactView"
+    tools:showIn="@layout/activity_contact_view">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_margin="10dp"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+
+       <fragment
+           android:layout_width="match_parent"
+           android:layout_height="300dp"
+           android:name="com.google.android.gms.maps.SupportMapFragment"
+           android:id="@+id/mapfrag"/>
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:elevation="2dp"
+           android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:textStyle="bold"
+                  android:layout_margin="10dp"
+                  android:textColor="@color/colorPrimary"
+                  android:textSize="17dp"
+                  android:text="Contact"
+                  android:layout_height="wrap_content" />
+
+              <TextView
+                  android:text="IDA Malapuram"
+                  android:drawableLeft="@mipmap/ic_location_blue"
+                  android:layout_marginLeft="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:text="+91 7894561230"
+                  android:drawableLeft="@mipmap/ic_phone_blue"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+              <TextView
+                  android:text="idamalapuram@outloo.com"
+                  android:drawableLeft="@mipmap/ic_mail_blue"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+
+          </LinearLayout>
+       </android.support.v7.widget.CardView>
+
+
+   </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

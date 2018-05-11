@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeslin.ida.Profile">
+
+    <ImageView
+        android:src="@mipmap/doc1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_dname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColorHint="#006fa7"
+            android:layout_below="@+id/input_layout_username"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/p_name"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_username"
+                android:layout_marginTop="13dp"
+                android:text="Dr. sujith"
+                android:drawableRight="@mipmap/ic_edit"
+                android:hint="Name"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_demail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColorHint="#006fa7"
+            android:layout_below="@+id/input_layout_username"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/p_email"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_username"
+                android:layout_marginTop="13dp"
+                android:text="sujith.dr@outlook.com"
+                android:drawableRight="@mipmap/ic_edit"
+                android:hint="Email"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_dphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColorHint="#006fa7"
+            android:layout_below="@+id/input_layout_username"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/p_phone"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_username"
+                android:layout_marginTop="23dp"
+                android:text="+917736268015"
+                android:drawableRight="@mipmap/ic_edit"
+                android:hint="phone"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="SUBMIT"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
